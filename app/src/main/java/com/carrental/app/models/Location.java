@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Location {
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
     private String state;
     private String cityOrTown;
     private int zipCode;
@@ -16,18 +16,18 @@ public class Location {
     public Location() {
     }
 
-    public Location(int id, String state, String cityOrTown, int zipCode) {
+    public Location(Long id, String state, String cityOrTown, int zipCode) {
         this.id = id;
         this.state = state;
         this.cityOrTown = cityOrTown;
         this.zipCode = zipCode;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
